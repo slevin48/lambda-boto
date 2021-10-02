@@ -16,7 +16,7 @@ hello_boto  GET      /
 static      GET      /static/<path:filename>
 ```
 
-## Zappa App: Get Paris weather and write to S3 file
+## Zappa App #1: Get Paris weather and write to S3 file
 
 This example makes a request to the openweathermap API and saves the result to a file on the S3 bucket:
 
@@ -25,3 +25,14 @@ This example makes a request to the openweathermap API and saves the result to a
 Dev version available here:
 https://dgpt7b34uf.execute-api.us-east-1.amazonaws.com/dev
 
+## Zappa App #2: Get Paris real estate prices
+
+This example serves a dataset of real estate prices in Paris by parsing the "code_commune" parameter of the URL:
+https://26yrburrn0.execute-api.eu-west-3.amazonaws.com/dev/dvf?code_commune=75114
+
+Find out more:
+https://github.com/slevin48/lambda-immo
+
+## Manage AWS from VScode
+
+![vscode_aws.png](vscode_aws.png)
